@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George's Website!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Лични css настройки, независещи от буутстрап -->
+    <style>
+        
+        .custom-box { border: 1px solid #ccc; padding: 10px; text-align: center; }
+        .circle { width: 50px; height: 50px; background: white; border-radius: 50%; border: 1px solid #000; margin: 0 auto; }
+        .logo { background-color: #affaca; }
+        #headerborder {background-color: lightcyan;}
+        #box-text {background-color: #f5ed7f;}
+        #headings {background-color: #f5bfc6;}
+        #paragraph {background-color: #f5b776;}
+        
+    </style>
+</head>
+<body>
+    <div id="mainContainer" class="container mt-3">
+        <!-- Хедър -->
+        <div id="headerborder" class="row mb-3 align-items-center custom-box border border-dark rounded-2">
+            <div class="col-3 d-flex align-items-center">
+                <div class="logo border border-dark" style="width: 140px; height: 30px;"></div>
+            </div>
+            <div class="col-9 d-flex justify-content-end align-items-center">
+                <a id="headerlink" href="https://uni-plovdiv.bg" class="btn btn-outline-primary btn-lg enabled mx-2 border border-dark" role="button" aria-disabled="true">ПУ</a>
+                <a href="https://fmi-plovdiv.org" class="btn btn-outline-primary btn-lg enabled mx-2 border border-dark" role="button" aria-disabled="true">ФМИ</a>
+                <a href="https://fmi-plovdiv.org/index.jsp?id=4287&ln=1" class="btn btn-outline-primary btn-lg enabled mx-2 border border-dark" role="button" aria-disabled="true">СТ</a>
+            </div>
+        </div>
+        <!-- Форма и снимка -->
+        <div class="row mb-3 mt-5">
+            <div class="col-md-4 custom-box border border-dark rounded-2">
+                <form>
+                    <label class="text-start d-block">Email</label>
+                    <input type="email" class="form-control mb-2 border border-dark rounded-2">
+                    <label class="text-start d-block">Password</label>
+                    <input type="password" class="form-control mb-2 border border-dark rounded-2">
+                    <button class="btn btn-success">Login</button>
+                    <button class="btn btn-primary">Register</button>
+                </form>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-7 custom-box border border-dark rounded-2">
+                <img src="JavaScript Logo.png" class="img-fluid" alt="..." style="object-fit: contain; width: 100%; height: 100%;">
+            </div>
+        </div>
+        
+        <!-- Карти с икони -->
+        <div class="d-flex justify-content-center gap-3 mt-5">
+            <div id="box-text" class="col-3 custom-box border border-dark rounded-2 p-3">
+                <div class="circle mt-3"></div>
+                <h2 class="Title mt-2">Lorem Ipsum</h2>
+                <p class="Paragraph mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div id="box-text" class="col-3 custom-box border border-dark rounded-2 p-3">
+                <div class="circle mt-3"></div>
+                <h2 class="Title mt-2">Каменица</h2>
+                <p class="Paragraph mt-3">Мъжете знаят защо!</p>
+            </div>
+            <div id="box-text" class="col-3 custom-box border border-dark rounded-2 p-3">
+                <div class="circle mt-3"></div>
+                <h2 class="Title mt-2">Bootstrap</h2>
+                <p class="Paragraph mt-3">Powerful, extensible, and feature-packed frontend toolkit.</p>
+            </div>
+            <div id="box-text" class="col-3 custom-box border border-dark rounded-2 p-3">
+                <div class="circle mt-3"></div>
+                <h2 class="Title mt-2">JavaScript</h2>
+                <p class="Paragraph mt-3">JavaScript (JS) is a lightweight interpreted (or just-in-time compiled) programming language with first-class functions.</p>
+            </div>
+        </div>
+        
+        <!-- Headings -->
+        <div class="d-flex justify-content-center mt-5 mb-5">
+          
+          <div id="headings" class="col-md-5 custom-box border border-dark rounded-2 d-flex align-items-center justify-content-center" style="height: 100px;">
+          <div class="fs-1 fw-bold text-center">Heading 5</div>
+          </div>
+          <div class="col-md-1"></div>
+          <div id="headings" class="col-md-5 custom-box border border-dark rounded-2 d-flex align-items-center justify-content-center" style="height: 100px;">
+          <div class="fs-1 fw-bold text-center">Heading 5</div>
+          </div>
+          </div>
+        
+        <!-- Параграфи -->
+         
+        <div id="paragraph" class="row justify-content-center border border-dark rounded-2 p-3 mb-3">
+          <div class="col-md-12 p-3">
+              <div class="row mt-2">
+                <div class="col-md-4">
+                  <p class="border border-dark rounded-2 p-2 d-flex align-items-center justify-content-center text-center fs-4">Paragraph with text</p>
+                </div>
+                <div class="col-md-4">
+                  <p class="border border-dark rounded-2 p-2 d-flex align-items-center justify-content-center text-center fs-4">Paragraph with text</p>
+                </div>
+                <div class="col-md-4">
+                  <p class="border border-dark rounded-2 p-2 d-flex align-items-center justify-content-center text-center fs-4">Paragraph with text</p>
+                </div>
+              </div>
+          </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
